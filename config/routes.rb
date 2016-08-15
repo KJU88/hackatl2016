@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :contacts   #generating routes; can check with bundle exec rake routes
   get '/about' => 'pages#about'
   root 'pages#home'
   # The priority is based upon order of creation: first created -> highest priority.
