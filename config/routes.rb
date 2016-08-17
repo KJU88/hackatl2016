@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :contacts   #generating routes; can check with bundle exec rake routes
   get '/about' => 'pages#about'
   root 'pages#home'
