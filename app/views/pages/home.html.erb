@@ -8,14 +8,14 @@
             <h2>Buyer Account</h2>
             <h4>Sign up to send buyer requests.</h4>
             </br>
-            <%= link_to "Sign up with Basic", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-lg btn-block' %>
+            <%= link_to "Sign up as Buyer", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-lg btn-block' %>
         </div>
     </div>
     <div class="col-md-6">
         <div class="well text-center">
             <h2>Seller Account</h2>
             <h4>Sign up to find customers immediately.</h4>
-            <%= link_to "Sign up with Pro", new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-success btn-lg btn-block' %>
+            <%= link_to "Sign up as Seller", new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-success btn-lg btn-block' %>
         </div>
     </div>
 </div>
