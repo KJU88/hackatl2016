@@ -1,6 +1,6 @@
 <div class="jumbotron text-center">
-    <h1>Welcome to Dev Match</h1>
-    <h3>A membership site where entrepeneurs can meet developers.</h3>
+    <h1>Welcome to Seeker</h1>
+    <h3>Facilitating efficiency between producers and consumers.</h3>
 </div>
 <div class="row">
     <% if user_signed_in? %>
@@ -30,16 +30,16 @@
         
         <div class="col-md-6">
             <div class="well text-center">
-                <h2>Basic Membership</h2>
-                <h4>Sign up for free and get basic access to the community.</h4>
+                <h2>Consumer Membership</h2>
+                <h4>Sign up to send buy requests to thousands of sellers</h4>
                 </br>
                 <%= link_to "Sign up with Basic", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-lg btn-block' %>
             </div>
         </div>
         <div class="col-md-6">
             <div class="well text-center">
-                <h2>Pro Membership</h2>
-                <h4>Sign up for the pro account for $10/month and get access to the community and contact information!</h4>
+                <h2>Producer Membership</h2>
+                <h4>Join and get direct and immediate access to buyers</h4>
                 <%= link_to "Sign up with Pro", new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-success btn-lg btn-block' %>
             </div>
         </div>
