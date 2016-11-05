@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :contacts   #generating routes; can check with bundle exec rake routes
   resources :sellerpage
   get '/about' => 'pages#about'
-  get '/home' => 'pages#home'
+  get '/buyer' => 'pages#buyer'
   root 'pages#home'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
