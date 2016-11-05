@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
@@ -42,7 +42,12 @@ gem 'stripe', '1.16.1'
 #Use figaro to hide secret keys
 gem 'figaro', '1.0.0'
 
+
 gem 'tzinfo-data'
+
+# User paperclip for image uploads
+gem 'paperclip', '~> 4.3.6'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
