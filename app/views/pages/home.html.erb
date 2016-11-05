@@ -1,33 +1,37 @@
-<div class="jumbotron text-center">
-    <h1>Welcome to Seeker</h1>
-    <h3>Facilitating more efficiency between producers and consumers.</h3>
-</div>
-
 <div class="row">
     <% if user_signed_in? %>
-        <div class="col-md-6">
-            <div class="well">
-                <h2 class="text-center">Your Profile</h2>
-                <% if current_user.profile %>
-                    <%= link_to "Edit your profile", edit_user_profile(current_user), class: 'btn btn-default btn-lg btn-block' %>
-                    <%= link_to "View your profile", user_path(current_user), class: 'btn btn-default btn-lg btn-block' %>
-                <% else %>
-                    <p>Create your profile so that you can share your information with the community.</p>
-                    
-                <% end %>
-            </div>
-        </div>
-        
-         <div class="col-md-6">
+        <div style="width: 500px; margin: 200px auto 200px auto;">
             <div class="well">
                 <h2 class="text-center">
-                    The Community
+                    Buyer Form
                 </h2>
-                <p class="text-center">Visit the community to meet other developers, entrepreneurs, and investors!</p>
-                <%= link_to "Visit the community", "#", class: 'btn btn-default btn-lg btn-block' %>
+                <p class="text-center">You are one step away from getting what you have been looking for! Please fill in the following form!</p>
+                <form>
+                    Full Name:<br>
+                    <input type="text" name="Full Name"><br>
+                    
+                     Contact Information :<br>
+                     <input type="text" name="Contact Information"><br>
+                     
+                     Item that you are looking for :<br>
+                     <input type="text" name="Item that you are looking for"><br>
+                     
+                     Max Price :<br>
+                     <input type="text" name="Max Price"><br>
+                    
+                     Specification :<br>
+                     <textarea name="Specification" cols="40" rows="5"></textarea>
+                     
+                     <br><input type="submit" value="Submit"><br>
+                </form>
             </div>
         </div>
+
     <% else %>
+    <div class="jumbotron text-center">
+    <h1>Welcome to Seeker</h1>
+    <h3>Facilitating more efficiency between producers and consumers.</h3>
+    </div>
         <div class="row">
             <div class="col-md-6">
                 <div class="well text-center">
