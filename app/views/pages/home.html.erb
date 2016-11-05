@@ -1,12 +1,12 @@
 <div class="jumbotron text-center">
     <h1>Welcome to Seeker</h1>
-    <h3>To facilitate more efficient transactions between sellers and buyers.</h3>
+    <h3>Facilitating more efficiency between producers and consumers.</h3>
 </div>
 <div class="row">
     <div class="col-md-6">
         <div class="well text-center">
             <h2>Buyer Account</h2>
-            <h4>Sign up to send buyer requests.</h4>
+            <h4>Sign up to send buy requests.</h4>
             </br>
             <%= link_to "Sign up as Buyer", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-lg btn-block' %>
         </div>
@@ -14,7 +14,7 @@
     <div class="col-md-6">
         <div class="well text-center">
             <h2>Seller Account</h2>
-            <h4>Sign up to find customers immediately.</h4>
+            <h4>Sign up to find customers directly and immediately.</h4>
             <%= link_to "Sign up as Seller", new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-success btn-lg btn-block' %>
         </div>
     </div>
