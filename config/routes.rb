@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users, controllers: { registrations: 'users/registrations' }
   resources :contacts   #generating routes; can check with bundle exec rake routes
+  resources :sellerpage
   get '/about' => 'pages#about'
+  get '/home' => 'pages#home'
   root 'pages#home'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
