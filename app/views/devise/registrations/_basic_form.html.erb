@@ -3,15 +3,13 @@
 
 <%= hidden_field_tag 'plan', params[:plan] %>
 
-<div class="field form-group">
 <%= f.label :email %><br />
 <%= f.email_field :email, autofocus: true, class: 'form-control' %>
-</div>
 
 <div class="field form-group">
 <%= f.label :password %>
 <% if @validatable %>
-<em>(<%= @minimum_password_length %> characters minimum)</em>
+<em>(<%= @minimum_password_length %> character minimum)</em>
 <% end %><br />
 <%= f.password_field :password, autocomplete: "off", class: 'form-control' %>
 </div>
@@ -22,6 +20,9 @@
 </div>
 
 <div class="actions form-group">
-<%= link_to "Sign up", "/buyer" %>
+
+
+    <%= link_to "Sign up", "/buyer", class: 'btn btn-success'%>
+
 </div>
 <% end %>

@@ -1,0 +1,13 @@
+@font-face {
+	font-family: "Sansumi-UltraLight";
+    src: url("//db.onlinewebfonts.com/t/291a8881fd9c20deb220d208b05a3a87.eot");
+    src: url("//db.onlinewebfonts.com/t/291a8881fd9c20deb220d208b05a3a87.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/291a8881fd9c20deb220d208b05a3a87.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/291a8881fd9c20deb220d208b05a3a87.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/291a8881fd9c20deb220d208b05a3a87.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/291a8881fd9c20deb220d208b05a3a87.svg#Sansumi-UltraLight") format("svg");
+}
+.txt{
+	font-family:"Sansumi-UltraLight";
+	font-weight:900;
+}

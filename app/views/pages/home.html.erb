@@ -1,11 +1,13 @@
+
+<%= stylesheet_link_tag "home.css" %>
 <div class="row">
-    <div class="jumbotron text-center">
-    <h1>Welcome to Seeker</h1>
-    <h3>Facilitating more efficiency between producers and consumers.</h3>
+    <div class="jumbotron text-center" style="background-color: transparent; padding-left: 60px;padding-right: 60px; width: 803px;  margin:auto">
+    <img src="https://scontent-atl3-1.xx.fbcdn.net/v/t34.0-12/14996472_10209095256673593_1015669837_n.png?oh=e38f95b1d79bbfeddfae187e454d89c8&oe=5820E753" height=231px></img>
+    <h3 class="txt">Facilitating more efficiency between producers and consumers.</h3>
     </div>
         <div class="row">
             <div class="col-md-6">
-                <div class="well text-center">
+                <div class="well text-center" style="background-color:white">
                     <h2>Buyer Account</h2>
                     <h4>Sign up to send buy requests to thousands of sellers</h4>
                     </br>
@@ -13,9 +15,12 @@
                 </div>
             </div>
                 <div class="col-md-6">
-                <div class="well text-center">
+                <div class="well text-center" style="background-color:white">
                     <h2>Seller Account</h2>
                     <h4>Join and get direct and immediate access to buyers</h4>
+                    <br/>
                     <%= link_to "Sign up as Seller", new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-success btn-lg btn-block' %>
+
                 </div>
+
 </div>
