@@ -3,7 +3,6 @@ Rails.application.routes.draw do
   resources :contacts   #generating routes; can check with bundle exec rake routes
   resources :sellerpage
   get '/about' => 'pages#about'
-  get '/buyer' => 'pages#buyer'
   get '/seller' => 'pages#seller'
   get '/iphone' => 'pages#iphone'
   get '/BidDown' => 'pages#BidDown'
