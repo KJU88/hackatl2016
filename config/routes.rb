@@ -7,11 +7,11 @@ Rails.application.routes.draw do
   get '/contact_1' => 'pages#contact_1'
   get '/seller' => 'pages#seller'
   get '/iphone' => 'pages#iphone'
+  get '/BidDown' => 'pages#BidDown'
+   get '/BidDownSuccess' => 'pages#BidDownSuccess'
   root 'pages#home'
   get '/buyer' => 'pages#buyer'
   get '/buyer_1' => 'pages#buyer_1'
-
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
